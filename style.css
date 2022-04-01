@@ -26,7 +26,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #0eb582;
+  background: #4d2ed9;
 }
 
 section {
@@ -61,7 +61,7 @@ section {
 }
 
 .header .logo i {
-  color: #0eb582;
+  color: #4d2ed9;
 }
 
 .header .navbar {
@@ -91,7 +91,7 @@ section {
 }
 
 .header a:hover {
-  color: #0eb582;
+  color: #4d2ed9;
 }
 
 .header .icons div {
@@ -102,10 +102,54 @@ section {
 }
 
 .header .icons div:hover {
-  color: #0eb582;
+  color: #4d2ed9;
 }
 
 .header #menu-btn {
   display: none;
+}
+
+.account-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 35rem;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+  z-index: 1200;
+  padding: 2rem;
+}
+
+.account-form #close-form {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: #030303;
+}
+
+.account-form #close-form:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.account-form form {
+  border: 0.1rem solid #4d2ed9;
+  padding: 2rem;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

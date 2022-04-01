@@ -8,7 +8,7 @@
     text-decoration: none;
     transition: all .2s linear;
 }
-$green: #0eb582;
+$main: #4d2ed9;
 $ligh-green:#f0fdfa;
 $light-color:#777;
 $light-white:#444;
@@ -45,7 +45,7 @@ html {
   }
   
   html::-webkit-scrollbar-thumb {
-    background: #0eb582;
+    background: #4d2ed9;
   }
   
   section {
@@ -68,7 +68,7 @@ html {
        font-weight: bolder;
        
        i{
-        color:$green;
+        color:$main;
        }     
 
    }
@@ -95,7 +95,7 @@ html {
        @include titleText(2rem);
 
        &:hover{
-         color: $green;
+        color:$main;
        }
    }
 
@@ -106,7 +106,7 @@ html {
        margin-left: 1.5rem;
 
        &:hover{
-           color: $green;
+        color:$main;
        }     
    }
 
@@ -117,3 +117,48 @@ html {
 
 
 }
+.account-form{
+  position: fixed;
+  top: 0; right: 0;
+  width: 35rem;
+  background: white;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  justify-content: center;
+  height: 100vh;
+  box-shadow: 0 0 0 100vw rgba( 0,0,0,.8);
+  z-index: 1200;
+  padding: 2rem;
+
+
+  #close-form{
+
+    position: absolute;
+    top:1.5rem; right:2.5rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color:$main;
+    // display: none;
+
+     &:hover{
+       transform: rotate(90deg);
+     }
+
+  }
+  form{
+    border: $boeder;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  h3{
+    @include titleText(2.5rem);
+    padding-bottom: .5rem;
+     text-transform: uppercase;
+  }
+}
+
+
+
+ 
