@@ -33,6 +33,23 @@ section {
   padding: 5rem 10%;
 }
 
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  border: 0.1rem solid #4d2ed9;
+  background: #f0fdfa;
+  color: #4d2ed9;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #4d2ed9;
+  color: white;
+}
+
 .header {
   position: -webkit-sticky;
   position: sticky;
@@ -130,6 +147,7 @@ section {
   -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
           box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
   z-index: 1200;
+  text-align: center;
   padding: 2rem;
 }
 
@@ -139,7 +157,7 @@ section {
   right: 2.5rem;
   font-size: 4rem;
   cursor: pointer;
-  color: #030303;
+  color: #4d2ed9;
 }
 
 .account-form #close-form:hover {
@@ -150,6 +168,68 @@ section {
 .account-form form {
   border: 0.1rem solid #4d2ed9;
   padding: 2rem;
-  text-align: center;
+  display: none;
+}
+
+.account-form form.active {
+  display: block;
+}
+
+.account-form h3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: #030303;
+  padding-bottom: .5rem;
+  text-transform: uppercase;
+}
+
+.account-form .box {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border: 0.1rem solid #4d2ed9;
+  font-size: 1.6rem;
+  margin: .7rem 0;
+}
+
+.account-form .flex {
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-form .flex label {
+  font-size: 1.5rem;
+  color: #777;
+  cursor: pointer;
+  gap: 5;
+}
+
+.account-form .flex a {
+  font-size: 1.5rem;
+  color: #777;
+  cursor: pointer;
+  margin-left: 3rem;
+}
+
+.account-form .flex:hover {
+  text-decoration: underline;
+  color: #4d2ed9;
+}
+
+.account-form .flex .btn {
+  width: 100%;
+}
+
+.account-form .flex .buttons .btn {
+  margin: 0 .5rem;
+}
+
+.account-form .flex.active {
+  background: #4d2ed9;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
