@@ -129,7 +129,7 @@ section {
 .account-form {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -105%;
   width: 35rem;
   background: white;
   display: -webkit-box;
@@ -144,11 +144,15 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
   z-index: 1200;
   text-align: center;
   padding: 2rem;
+}
+
+.account-form.active {
+  right: 0;
+  -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
 }
 
 .account-form #close-form {
