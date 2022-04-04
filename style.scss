@@ -239,5 +239,79 @@ html {
 }
 
 
+.footer{
+  background: $ligh-green;
+   
+
+   
+
+  .box-container{
+    @include grid(25rem);
+
+    .box{
+      
+      h3{
+        @include titleText(2.2rem);
+        padding: 1rem 0 ;
+
+        i{
+          color: $main;
+        }
+
+      }
+      .share{
+        margin-bottom : 1rem;
+        a{
+          height: 4.5rem;
+          width: 4.5rem;
+          line-height: 4.5rem;
+          font-size: 1.7rem;
+          background-color: $main;
+          color: white;
+          margin-right:.3rem;
+          text-align: center;
+
+          &:hover{
+            background-color: $black
+
+          }
+
+
+        }
+
+      }
+
+      .link{
+        @include graphText(1.5rem);
+        padding:.5rem 0;
+        display: block;
+
+        &:hover{
+           color: $main;
+           text-decoration: underline;
+
+        }
+      }
+      p{
+        @include graphText(1.5rem);
+        padding: 1rem 0;
+
+      }
+
+      .email{
+
+        width: 100%;
+        padding: 1.2rem 1.4rem;
+        font-size: 1.6rem;
+        border: $boeder;
+        margin-bottom: 1rem;
+      }
+
+    }
+  }
+}
+
+
+
 
  

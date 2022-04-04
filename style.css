@@ -236,4 +236,74 @@ section {
   background: #4d2ed9;
   color: white;
 }
+
+.footer {
+  background: #f0fdfa;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  color: #030303;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i {
+  color: #4d2ed9;
+}
+
+.footer .box-container .box .share {
+  margin-bottom: 1rem;
+}
+
+.footer .box-container .box .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  background-color: #4d2ed9;
+  color: white;
+  margin-right: .3rem;
+  text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+  background-color: #030303;
+}
+
+.footer .box-container .box .link {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+  padding: .5rem 0;
+  display: block;
+}
+
+.footer .box-container .box .link:hover {
+  color: #4d2ed9;
+  text-decoration: underline;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .email {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid #4d2ed9;
+  margin-bottom: 1rem;
+}
 /*# sourceMappingURL=style.css.map */
