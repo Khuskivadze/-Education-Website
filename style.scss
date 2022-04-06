@@ -9,7 +9,7 @@
     transition: all .2s linear;
 }
 $main: #4d2ed9;
-$ligh-green:#f0fdfa;
+$ligh-green:#cac0f8;
 $light-color:#777;
 $light-white:#444;
 $black:rgb(3, 3, 3);
@@ -51,6 +51,12 @@ html {
   section {
     padding: 5rem 10%;
   }
+.heading{
+  text-align: center;
+  margin-bottom: 3rem;
+  @include titleText(3.5rem)
+
+}
 
 .btn{
   display: inline-block;
@@ -272,6 +278,49 @@ html {
   background: $main;
 
 }
+
+.subjects{
+
+  .box-container{
+    @include grid(16rem);
+
+  }
+
+  .box{
+    padding: 1rem 1rem;
+    text-align: center;
+    border: $boeder;
+    background: #907af1;
+    cursor: pointer;
+
+    &:hover{
+      background: $main ;
+
+      h3{
+        color: white;
+      }
+      p{
+        color: $light-white;
+      }
+    }
+
+    img{
+      height: 11rem;
+      margin-bottom: .5rem;
+    }
+    h3{
+      @include titleText(1.5rem);
+      padding: .5rem 0;
+    }
+    p{
+      @include graphText(1.5rem)
+    }
+  }
+
+}
+ 
+
+ 
 
 
 .footer{

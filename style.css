@@ -33,13 +33,21 @@ section {
   padding: 5rem 10%;
 }
 
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  color: #030303;
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 3rem;
   font-size: 1.8rem;
   border: 0.1rem solid #4d2ed9;
-  background: #f0fdfa;
+  background: #cac0f8;
   color: #4d2ed9;
   cursor: pointer;
   text-align: center;
@@ -276,8 +284,54 @@ section {
   background: #4d2ed9;
 }
 
+.subjects .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+}
+
+.subjects .box {
+  padding: 1rem 1rem;
+  text-align: center;
+  border: 0.1rem solid #4d2ed9;
+  background: #907af1;
+  cursor: pointer;
+}
+
+.subjects .box:hover {
+  background: #4d2ed9;
+}
+
+.subjects .box:hover h3 {
+  color: white;
+}
+
+.subjects .box:hover p {
+  color: #444;
+}
+
+.subjects .box img {
+  height: 11rem;
+  margin-bottom: .5rem;
+}
+
+.subjects .box h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #030303;
+  padding: .5rem 0;
+}
+
+.subjects .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+}
+
 .footer {
-  background: #f0fdfa;
+  background: #cac0f8;
 }
 
 .footer .box-container {
