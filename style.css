@@ -237,6 +237,45 @@ section {
   color: white;
 }
 
+.home {
+  padding: 0;
+}
+
+.home .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60rem;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.home .content {
+  width: 50rem;
+}
+
+.home .content h3 {
+  font-size: 5.2rem;
+  text-transform: capitalize;
+  color: #030303;
+  color: #4d2ed9;
+}
+
+.home .content p {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #777;
+  color: white;
+  padding: 1rem 0;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4d2ed9;
+}
+
 .footer {
   background: #f0fdfa;
 }
@@ -244,7 +283,7 @@ section {
 .footer .box-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr));
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2rem;
 }

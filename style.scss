@@ -239,6 +239,41 @@ html {
 }
 
 
+.home{
+  padding: 0;
+
+  .slider{
+    display: flex;
+    align-items: center;
+    height: 60rem;
+    background-size: cover !important;
+    background-position: center !important;
+     
+  }
+  .content{
+    width: 50rem;
+
+    h3{
+      @include titleText(5.2rem);
+       color: $main;
+    }
+
+    p{
+       @include graphText(1.6rem);
+       color: white;
+       padding: 1rem 0;
+
+    }
+  }  
+   
+}
+
+.swiper-pagination-bullet-active{
+  background: $main;
+
+}
+
+
 .footer{
   background: $ligh-green;
    
