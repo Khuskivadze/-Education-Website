@@ -98,3 +98,11 @@ var swiper = new Swiper(".reviews-slider", {
     },
   },
 });
+
+document.querySelector ('.load-more .btn').onclick = () => {
+   document.querySelectorAll('.course .box-container .hide').forEach( show =>{
+     show.style.display = 'block';
+
+   });
+   document.querySelector ('.load-more .btn').style.display = 'none';
+};
