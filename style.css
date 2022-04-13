@@ -12,6 +12,13 @@
   transition: all .2s linear;
 }
 
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -39,6 +46,33 @@ section {
   font-size: 3.5rem;
   text-transform: capitalize;
   color: #030303;
+}
+
+.heading-link {
+  text-align: center;
+  background: url(./images/heading-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.heading-link h3 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: #030303;
+}
+
+.heading-link p {
+  font-size: 2rem;
+  line-height: 2;
+  color: #777;
+}
+
+.heading-link p a {
+  color: #4d2ed9;
+}
+
+.heading-link p a:hover {
+  text-decoration: underline;
 }
 
 .btn {
@@ -325,6 +359,204 @@ section {
 }
 
 .subjects .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+}
+
+.home-course .slide {
+  text-align: center;
+  position: relative;
+  background: #cac0f8;
+  overflow: hidden;
+}
+
+.home-course .slide:hover .content {
+  bottom: 0;
+}
+
+.home-course .slide .image {
+  padding: 2rem;
+}
+
+.home-course .slide .image img {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.home-course .slide .image h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #030303;
+}
+
+.home-course .slide .content {
+  position: absolute;
+  bottom: -100%;
+  right: 0;
+  left: 0;
+  background: #4d2ed9;
+  padding: 2rem 3rem;
+}
+
+.home-course .slide .content h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #030303;
+  color: white;
+}
+
+.home-course .slide .content p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+  color: #444;
+}
+
+.home-course .slide .content .btn:hover {
+  background: #030303;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.about .image img {
+  width: 100%;
+}
+
+.about .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.about .content .about-title {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: #030303;
+}
+
+.about .content p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+  padding: 1rem;
+}
+
+.about .icons-container {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.about .icons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 16rem;
+          flex: 1 1 16rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  border: 0.1rem solid #4d2ed9;
+}
+
+.about .icons img {
+  height: 7rem;
+}
+
+.about .icons h3 {
+  padding: .5rem 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #030303;
+}
+
+.about span {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+}
+
+.teachers .slide {
+  text-align: center;
+  width: 30rem;
+}
+
+.teachers .slide:hover .image img {
+  background: #4d2ed9;
+}
+
+.teachers .slide:hover .image .share {
+  bottom: 0;
+}
+
+.teachers .slide .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.teachers .slide .image img {
+  background: #cac0f8;
+  width: 100%;
+}
+
+.teachers .slide .image .share {
+  position: absolute;
+  bottom: -10rem;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+}
+
+.teachers .slide .image .share a {
+  font-size: 3rem;
+  margin: 0 1rem;
+  color: white;
+}
+
+.teachers .slide .image .share a:hover {
+  color: #4d2ed9;
+}
+
+.teachers .slide .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.teachers .slide .content h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #030303;
+}
+
+.teachers .slide .content span {
   font-size: 1.5rem;
   line-height: 2;
   color: #777;

@@ -45,3 +45,39 @@ var swiper = new Swiper(".home-slider", {
   loop:true,
   grabCursor:true,
 });
+
+var swiper = new Swiper(".home-course-slider", {
+  loop:true,
+  grabCursor:true,
+  spaceBetween: 20,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+
+
+var swiper = new Swiper(".teacher-slider", {
+  loop:true,
+  grabCursor:true,
+  spaceBetween: 20,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+  },
+});
